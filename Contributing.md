@@ -15,7 +15,7 @@
 git checkout master
 
 # Заберите изменения из репозитория Академии¹
-git pull academy master
+git pull git@github.com:htmlacademy-adaptive/969735-pink-17.git
 
 # Отправьте изменения в ваш форк на Гитхабе
 git push
