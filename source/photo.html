@@ -8,109 +8,125 @@
 
 <body>
   <header class="page-header">
+    <h1 class="visually-hidden">Приложение Пинк</h1>
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="#" alt="логотип pink.">
+      <img class="page-header__logo-image" src="#" alt="логотип пинк.">
     </a>
-    <button class="page-header__toggle" type="button" aria-label="закрыть меню."></button>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">главная</a>
+    <button class="close-toggle" type="button" aria-label="закрыть меню."></button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link link-main" href="index.html">главная</a>
         </li>
-        <li class="site-list__item">
-          <a href="photo.html">фотографии</a>
+        <li class="nav__item">
+          <a class="nav__link link-photo" href="photo.html">фотографии</a>
         </li>
-        <li class="site-list__item">
-          <a href="form.html">конкурс</a>
+        <li class="nav__item">
+          <a class="nav__link link-competition" href="form.html">конкурс</a>
         </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+        <li class="nav__item">
+          <a class="nav__link link-academy" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="user-content">
-    <h1 class="user-photos__head">Фотографии пользователей</h1>
-    <p class="user-photos__text">Взгляните на фотографии, которые выкладывают пользователи! видите, как не хватает ваших?</p>
+    <h1 class="user-content__title">Фотографии пользователей</h1>
+    <p class="user-content__text">Взгляните на фотографии, которые выкладывают пользователи! видите, как не хватает ваших?</p>
     <section class="user-photos">
       <h2 class="visually-hidden">Фотографии пользователей с комментариями</h2>
-      <ul class="user-photos__list">
-        <li class="user-photos__item">
-          <a href="#"><img class="user-photos__image" src="#" alt="фото моста Анны."></a>
-          <h2 class="user-photos__name">Анна <span>5 минут назад</span></h2>
-          <p class="user-photos__commene-text">прыгать или нет? напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <button class="user-photos__like" type="button" name="like-button" aria-label="кнопка для лайка.">
+      <ul class="user-photos__list-photo">
+        <li class="user-photos__item-photo">
+          <a class="user-photos__link-photo" href="#">
+            <img class="user-photos__image" src="#" alt="фото моста Анны.">
+          </a>
+          <h2 class="user-photos__title-name">Анна <span>5 минут назад</span></h2>
+          <p class="user-photos__comments-text">прыгать или нет? напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <button class="user-photos__like-button" type="button" name="like-button" aria-label="кнопка для лайка.">
           </button>
-          <p class="user-photos__number-like">нравится: 215</p>
+          <p class="user-photos__like-number">нравится: 215</p>
         </li>
-        <li class="user-photos__item">
-          <a href="#"><img class="user-photos__image" src="#" alt="фотография на которой происходит съемка автомобиля."></a>
-          <h2 class="user-photos__name">Левон <span>5 часов назад</span></h2>
-          <p class="user-photos__commene-text">вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <button class="user-photos__like" type="button" aria-label="кнопка для лайка.">
+        <li class="user-photos__item-photo">
+          <a class="user-photos__link-photo" href="#">
+            <img class="user-photos__image" src="#" alt="фотография на которой происходит съемка автомобиля.">
+          </a>
+          <h2 class="user-photos__title-name">Левон <span>5 часов назад</span></h2>
+          <p class="user-photos__comments-text">вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <button class="user-photos__like-button" type="button" aria-label="кнопка для лайка.">
           </button>
-          <p class="user-photos__number-like">нравится: 356</p>
+          <p class="user-photos__like-number">нравится: 356</p>
         </li>
-        <li class="user-photos__item">
-          <a href="#"><img class="user-photos__image" src="#" alt="фото ударной установки."></a>
-          <h2 class="user-photos__name">Антон <span>12 часов назад</span></h2>
-          <p class="user-photos__commene-text">соседи будут рады!</p>
-          <button class="user-photos__like" type="button" aria-label="кнопка для лайка.">
+        <li class="user-photos__item-photo">
+          <a class="user-photos__link-photo" href="#">
+            <img class="user-photos__image" src="#" alt="фото ударной установки.">
+          </a>
+          <h2 class="user-photos__title-name">Антон <span>12 часов назад</span></h2>
+          <p class="user-photos__comments-text">соседи будут рады!</p>
+          <button class="user-photos__like-button" type="button" aria-label="кнопка для лайка.">
           </button>
-          <p class="user-photos__number-like">нравится: 666</p>
+          <p class="user-photos__like-number">нравится: 666</p>
         </li>
-        <li class="user-photos__item">
-          <a href="#"><img class="user-photos__image" src="#" alt="фото стелкянной крыши из нутри здания, видно небо."></a>
-          <h2 class="user-photos__name">Борис <span>20 часов назад</span></h2>
-          <p class="user-photos__commene-text">здесь могла быть ваша цитата о высоком и вечном.</p>
-          <button class="user-photos__like" type="button" aria-label="кнопка для лайка.">
+        <li class="user-photos__item-photo">
+          <a class="user-photos__link-photo" href="#">
+            <img class="user-photos__image" src="#" alt="фото стелкянной крыши из нутри здания, видно небо.">
+          </a>
+          <h2 class="user-photos__title-name">Борис <span>20 часов назад</span></h2>
+          <p class="user-photos__comments-text">здесь могла быть ваша цитата о высоком и вечном.</p>
+          <button class="user-photos__like-button" type="button" aria-label="кнопка для лайка.">
           </button>
-          <p class="user-photos__number-like">нравится: 215</p>
+          <p class="user-photos__like-number">нравится: 215</p>
         </li>
-        <li class="user-photos__item">
-          <a href="#"><img class="user-photos__image" src="#" alt="кубанская бахча."></a>
-          <h2 class="user-photos__name">Сергей <span>25 часов назад</span></h2>
-          <p class="user-photos__commene-text">Самая кубанская в мире!</p>
-          <button class="user-photos__like" type="button" aria-label="кнопка для лайка.">
+        <li class="user-photos__item-photo">
+          <a class="user-photos__link-photo" href="#">
+            <img class="user-photos__image" src="#" alt="кубанская бахча.">
+          </a>
+          <h2 class="user-photos__title-name">Сергей <span>25 часов назад</span></h2>
+          <p class="user-photos__comments-text">Самая кубанская в мире!</p>
+          <button class="user-photos__like-button" type="button" aria-label="кнопка для лайка.">
           </button>
-          <p class="user-photos__number-like">нравится: 4</p>
+          <p class="user-photos__like-number">нравится: 4</p>
         </li>
-        <li class="user-photos__item">
-          <a href="#"><img class="user-photos__image" src="#" alt="фото горы без снега."></a>
-          <h2 class="user-photos__name">Максим <span>40 часов назад</span></h2>
+        <li class="user-photos__item-photo">
+          <a class="user-photos__link-photo" href="#">
+            <img class="user-photos__image" src="#" alt="фото горы без снега.">
+          </a>
+          <h2 class="user-photos__title-name">Максим <span>40 часов назад</span></h2>
           <p class="user-photos__commene-text">Где снег-то?</p>
-          <button class="user-photos__like" type="button" aria-label="кнопка для лайка.">
+          <button class="user-photos__like-button" type="button" aria-label="кнопка для лайка.">
           </button>
-          <p class="user-photos__number-like">нравится: 150</p>
+          <p class="user-photos__like-number">нравится: 150</p>
         </li>
-        <li class="user-photos__item">
-          <a href="#"><img class="user-photos__image" src="#" alt="фото крыла самолета, летящего в небе."></a>
-          <h2 class="user-photos__name">Надежда <span>45 часов назад</span></h2>
+        <li class="user-photos__item-photo">
+          <a class="user-photos__link-photo" href="#">
+            <img class="user-photos__image" src="#" alt="фото крыла самолета, летящего в небе.">
+          </a>
+          <h2 class="user-photos__title-name">Надежда <span>45 часов назад</span></h2>
           <p class="user-photos__commene-text">Всем GM и взаимные лайки!</p>
-          <button class="user-photos__like" type="button" aria-label="кнопка для лайка.">
+          <button class="user-photos__like-button" type="button" aria-label="кнопка для лайка.">
           </button>
-          <p class="user-photos__number-like">нравится: 2560</p>
+          <p class="user-photos__like-number">нравится: 2560</p>
         </li>
       </ul>
     </section>
     <section class="filter">
-
       <h2 class="visually-hidden">Фильтр</h2>
-      <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-      <form class="filter-form" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" name="filter" method="post">
-        <button type="button" class="filter__item-trimming" aria-label="вид, обрезать."></button>
-        <label class="filter__scale-item-trimming">
-          <input type="range" class="range-toggle range-toggle-max">
+      <p class="filter__text-header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+
+      <form class="filter__form" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" name="filter" method="post">
+
+        <button class="filter__item-trimming" type="button" aria-label="вид, обрезать."></button>
+        <label class="filter__scale-trimming">
+          <input type="filter__range" class="range-toggle range-toggle-max">
         </label>
 
-        <button type="button" class="filter__item-fill" aria-label="заливка."></button>
-        <label class="filter__scale-image-fill">
-          <input type="range" class="range-toggle range-toggle-max">
+        <button class="filter__item-fill" type="button" aria-label="заливка."></button>
+        <label class="filter__scale-fill">
+          <input type="filter__range" class="range-toggle range-toggle-max">
         </label>
 
-        <button type="button" class="filter__item-saturation" aria-label="контрастность."></button>
-        <label class="filter__scale-item-saturation">
-          <input type="range" class="range-toggle range-toggle-max">
+        <button class="filter__item-saturation" type="button" aria-label="контрастность."></button>
+        <label class="filter__scale-saturation">
+          <input type="filter__range" class="range-toggle range-toggle-max">
         </label>
 
         <label class="filter__file-selection">
@@ -124,7 +140,7 @@
   </main>
   <footer class="footer-block">
     <a href="#"><img class="footer-block__image" src="#" alt="Текстовый логотип Pink."></a>
-    <ul class="footer-block__list">
+    <ul class="footer-block__list-twitter">
       <li class="footer-block__item-twitter">
         <a class="footer-block__link-twitter" href="https://twitter.com/?lang=ru">
           <img class="footer-block__img-twitter" src="#" alt="twitter pink.">
@@ -143,7 +159,7 @@
     </ul>
     <p class="footer-block__item-htmlacademy">
       <a class="footer-block__link-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-        <img class="footer-block__img-htmlacademy" src="#" alt="html academy.">
+        <img class="footer-block__img-htmlacademy" src="#" alt="logo html academy.">
       </a>
     </p>
   </footer>
