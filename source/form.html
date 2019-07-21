@@ -8,23 +8,23 @@
 
 <body>
   <header class="page-header">
-    <a class="link-logo-header" href="index.html">
-      <img class="link-logo-header__logo-image" src="#" alt="логотип пинк.">
+    <a class="logo-link" href="index.html">
+      <img class="logo-link__logo-image" src="#" alt="логотип пинк.">
     </a>
     <button class="close-toggle" type="button" aria-label="закрыть меню."></button>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav-link-main" href="index.html">главная</a>
+          <a class="nav__link-main" href="index.html">главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav-link-photo" href="photo.html">фотографии</a>
+          <a class="nav__link-photo" href="photo.html">фотографии</a>
         </li>
         <li class="nav__item">
-          <a class="nav-link-competition" href="form.html">конкурс</a>
+          <a class="nav__link-competition" href="form.html">конкурс</a>
         </li>
         <li class="nav__item">
-          <a class="nav-link-academy" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+          <a class="nav__link-academy" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
         </li>
       </ul>
     </nav>
@@ -36,107 +36,107 @@
     <p class="block-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз —
       1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
     </p>
-    <form class="form-wrapper__user-data-block" action="https://echo.htmlacademy.ru" name="competition" method="post">
-      <div>
-        <label class="form-wrapper__surname">фамилия:
-          <input class="form-wrapper__text" type="text" name="surname" placeholder="Укажите фамилию *" required>
+    <form class="form-block__user-data-block" action="https://echo.htmlacademy.ru" name="competition" method="post">
+      <div class="form-block__identification">
+        <label class="form-block__surname">фамилия:
+          <input class="form-block__text" type="text" name="surname" placeholder="Укажите фамилию *" required>
         </label>
-        <label class="form-wrapper__name">имя:
-          <input class="form-wrapper__text" type="text" name="name" placeholder="Введите ваше имя *" required>
+        <label class="form-block__name">имя:
+          <input class="form-block__text" type="text" name="name" placeholder="Введите ваше имя *" required>
         </label>
-        <label class="form-wrapper__patronymic">отчество:
-          <input class="form-wrapper__text" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+        <label class="form-block__patronymic">отчество:
+          <input class="form-block__text" type="text" name="patronymic" placeholder="Ну и отчество тоже">
         </label>
       </div>
-      <div class="form-wrapper__block-checked">
-        <h2 class="form-wrapper__tetle-progress">ваши безбашенные достижения в путешествии</h2>
-        <ul class="form-wrapper__lisst-checked">
-          <li class="form-wrapper__item-checked">
-            <label class="form-wrapper__check-box-lebel">Сделал селфи с акулой
-              <input class="form-wrapper__check-box-input" type="checkbox" name="shark" checked>
+      <div class="form-block__block-progress">
+        <h2 class="form-block__tetle-progress">ваши безбашенные достижения в путешествии</h2>
+        <ul class="form-block__lisst-checked">
+          <li class="form-block__item-checked">
+            <label class="form-block__check-box-lebel">Сделал селфи с акулой
+              <input class="form-block__check-box-input" type="checkbox" name="shark" checked>
             </label>
           </li>
           <li>
-            <label class="form-wrapper__check-box-lebel">Обгорел на пляже
-              <input class="form-wrapper__check-box-input" type="checkbox" name="beach" checked>
+            <label class="form-block__check-box-lebel">Обгорел на пляже
+              <input class="form-block__check-box-input" type="checkbox" name="beach" checked>
             </label>
           </li>
           <li>
-            <label class="form-wrapper__check-box-lebel">Видел Чака Норриса
-              <input class="form-wrapper__check-box-input" type="checkbox" name="norris">
+            <label class="form-block__check-box-lebel">Видел Чака Норриса
+              <input class="form-block__check-box-input" type="checkbox" name="norris">
             </label>
           </li>
           <li>
-            <label class="form-wrapper__check-box-lebel">Накупил сувениров
-              <input class="form-wrapper__check-box-input" type="checkbox" name="souvenirs">
+            <label class="form-blockr__check-box-lebel">Накупил сувениров
+              <input class="form-block__check-box-input" type="checkbox" name="souvenirs">
             </label>
           </li>
           <li>
-            <label class="form-wrapper__check-box-lebel">Удержал башню
-              <input class="form-wrapper__check-box-input" type="checkbox" name="tower" checked>
+            <label class="form-block__check-box-lebel">Удержал башню
+              <input class="form-block__check-box-input" type="checkbox" name="tower" checked>
             </label>
           </li>
           <li>
-            <label class="form-wrapper__check-box-lebel">Разгромил отель
-              <input class="form-wrapper__check-box-input" type="checkbox" name="hotel">
+            <label class="form-block__check-box-lebel">Разгромил отель
+              <input class="form-block__check-box-input" type="checkbox" name="hotel">
             </label>
           </li>
         </ul>
       </div>
-      <div class="form-wrapper__block-personal-data">
-        <label class="form-wrapper__phone-number">номер телефона
-          <input class="form-wrapper__tel" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
+      <div class="form-block__block-personal-data">
+        <label class="form-block__phone-number">номер телефона
+          <input class="form-block__tel" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
         </label>
-        <label class="form-wrapper__mail-address">адрес почты
-          <input class="form-wrapper__email" type="email" name="mail-address" placeholder="Введите почту *" required>
-        </label>
-      </div>
-      <div class="form-wrapper__block-application-type">
-        <h2 class="form-wrapper__title-application-type">с каким приложением путешествовали?</h2>
-        <label class="form-wrapper__application-ios">Pink для iOS
-          <input class="form-wrapper__ios" type="radio" name="application-type" value="ios" checked>
-        </label>
-        <label class="form-wrapper__application-android">Pink на Android
-          <input class="form-wrapper__android" type="radio" name="application-type" value="android">
-        </label>
-        <label class="form-wrapper__application-windows-phone">Windows Phone
-          <input class="form-wrapper__windows-phone" type="radio" name="application-type" value="windows-phone">
+        <label class="form-block__mail-address">адрес почты
+          <input class="form-block__email" type="email" name="mail-address" placeholder="Введите почту *" required>
         </label>
       </div>
-      <div class="form-wrapper__block-description-emotions">
-        <label class="form-wrapper__description-emotions">опишите свои эмоции
+      <div class="form-block__block-application-type">
+        <h2 class="form-block__title-application-type">с каким приложением путешествовали?</h2>
+        <label class="form-block__application-ios">Pink для iOS
+          <input class="form-block__ios" type="radio" name="application-type" value="ios" checked>
+        </label>
+        <label class="form-block__application-android">Pink на Android
+          <input class="form-block__android" type="radio" name="application-type" value="android">
+        </label>
+        <label class="form-block__application-windows-phone">Windows Phone
+          <input class="form-block__windows-phone" type="radio" name="application-type" value="windows-phone">
+        </label>
+      </div>
+      <div class="form-block__block-description-emotions">
+        <label class="form-block__description-emotions">опишите свои эмоции
           <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </label>
       </div>
-      <button class="form-wrapper__push-contest-data" type="submit" name="button-to-send-contest-data" aria-label="кнопка для отправки данных конкурса.">отправить форму</button>
-      <p class="form-wrapper__required-fields"><span>*</span> — обязательные поля</p>
+      <button class="form-block__push-contest-data" type="submit" name="button-to-send-contest-data" aria-label="кнопка для отправки данных конкурса.">отправить форму</button>
+      <p class="form-block__required-fields"><span>*</span> — обязательные поля</p>
     </form>
   </main>
 
   <footer class="footer">
-    <a class="footer__link" href="#">
-      <img class="footer__link__image" src="#" alt="Текстовый логотип Pink.">
+    <a class="logo-link" href="#">
+      <img class="logo-link__logo-image" src="#" alt="Текстовый логотип Pink.">
     </a>
-    <ul class="footer__list">
-      <li class="footer__list item-twitter">
-        <a class="item-twitter__link-twitter" href="https://twitter.com/?lang=ru">
-          <img class="item-twitter__img-twitter" src="#" alt="twitter pink.">
+    <ul class="social-networks">
+      <li class="social-networks__item-twitter">
+        <a class="social-networks__link-twitter" href="https://twitter.com/?lang=ru">
+          <img class="social-networks__img-twitter" src="#" alt="twitter pink.">
         </a>
       </li>
-      <li class="footer__list item-facebook">
-        <a class="item-twitter__link-facebook" href="https://ru-ru.facebook.com/">
-          <img class="item-twitter__img-facebook" src="#" alt="facebook pink.">
+      <li class="social-networks__item-facebook">
+        <a class="social-networks__link-facebook" href="https://ru-ru.facebook.com/">
+          <img class="social-networks__img-facebook" src="#" alt="facebook pink.">
         </a>
       </li>
-      <li class="footer__list item-youtube">
-        <a class="item-twitter__link-youtube" href="https://www.youtube.com/?gl=RU&hl=ru">
-          <img class="item-twitter__img-youtube" src="#" alt="youtube pink.">
+      <li class="social-networks__item-youtube">
+        <a class="social-networks__link-youtube" href="https://www.youtube.com/?gl=RU&hl=ru">
+          <img class="isocial-networks__img-youtube" src="#" alt="youtube pink.">
         </a>
       </li>
     </ul>
-    <p class="footer-block-text">
-      <a class="footer-block-text__link-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-        <img class="footer-block-text__img-htmlacademy" src="#" alt="logo html academy.">
+    <p class="block-developer">
+      <a class="block-developer__link-developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+        <img class="block-developer__img-developer" src="#" alt="logo html academy.">
       </a>
     </p>
   </footer>
