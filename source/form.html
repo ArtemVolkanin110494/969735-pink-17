@@ -36,80 +36,80 @@
     <p class="block-text">Поделитесь своей историей и получите шанс выиграть ценный приз —
       1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
     </p>
-    <form class="block-identification" action="https://echo.htmlacademy.ru" name="competition" method="post">
-      <div class="block-identification__identification">
-        <label class="block-identification__label">фамилия:
-          <input class="block-identification__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+    <form class="form" action="https://echo.htmlacademy.ru" name="competition" method="post">
+      <div class="form__identification">
+        <label class="form__label">фамилия:
+          <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
         </label>
-        <label class="block-identification__label">имя:
-          <input class="block-identification__input" type="text" name="name" placeholder="Введите ваше имя *" required>
+        <label class="form__label">имя:
+          <input class="form__input" type="text" name="name" placeholder="Введите ваше имя *" required>
         </label>
-        <label class="block-identification__label">отчество:
-          <input class="block-identification__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+        <label class="form__label">отчество:
+          <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
         </label>
       </div>
-      <div class="block-identification__block-progress">
-        <h2 class="block-title-progress">ваши безбашенные достижения в путешествии</h2>
-        <ul class="block-identification__lisst-checked">
-          <li class="block-identification__item-checked">
-            <label class="block-identification__check-box-lebel">Сделал селфи с акулой
-              <input class="block-identification__check-box-input" type="checkbox" name="shark" checked>
+      <div class="form__block-progress">
+        <h2 class="second-level-heading">ваши безбашенные достижения в путешествии</h2>
+        <ul class="form__list-checked">
+          <li class="form__item-checked">
+            <label class="form__label">Сделал селфи с акулой
+              <input class="form__checkbox" type="checkbox" name="shark" checked>
             </label>
           </li>
           <li>
-            <label class="block-identification__check-box-lebel">Обгорел на пляже
-              <input class="block-identification__check-box-input" type="checkbox" name="beach" checked>
+            <label class="form__label">Обгорел на пляже
+              <input class="form__checkbox" type="checkbox" name="beach" checked>
             </label>
           </li>
           <li>
-            <label class="block-identification__check-box-lebel">Видел Чака Норриса
-              <input class="block-identification__check-box-input" type="checkbox" name="norris">
+            <label class="form__label">Видел Чака Норриса
+              <input class="form__checkbox" type="checkbox" name="norris">
             </label>
           </li>
           <li>
-            <label class="block-identification__check-box-lebel">Накупил сувениров
-              <input class="block-identification__check-box-input" type="checkbox" name="souvenirs">
+            <label class="form__label">Накупил сувениров
+              <input class="form__checkbox" type="checkbox" name="souvenirs">
             </label>
           </li>
           <li>
-            <label class="block-identification__check-box-lebel">Удержал башню
-              <input class="block-identification__check-box-input" type="checkbox" name="tower" checked>
+            <label class="form__label">Удержал башню
+              <input class="form__checkbox" type="checkbox" name="tower" checked>
             </label>
           </li>
           <li>
-            <label class="block-identification__check-box-lebel">Разгромил отель
-              <input class="block-identification__check-box-input" type="checkbox" name="hotel">
+            <label class="form__label">Разгромил отель
+              <input class="form__checkbox" type="checkbox" name="hotel">
             </label>
           </li>
         </ul>
       </div>
-      <div class="block-identification__block-personal-data">
-        <label class="block-identification__phone-number">номер телефона
-          <input class="block-identification__tel" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
+      <div class="form__block-personal-data">
+        <label class="form__label">номер телефона
+          <input class="form__input-phone" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
         </label>
-        <label class="block-identification__mail-address">адрес почты
-          <input class="block-identification__email" type="email" name="mail-address" placeholder="Введите почту *" required>
+        <label class="form__label">адрес почты
+          <input class="form__input" type="email" name="mail-address" placeholder="Введите почту *" required>
         </label>
       </div>
-      <div class="block-identification__block-application-type">
+      <div class="form__block-application-type">
         <h2 class="block-title-application-type">с каким приложением путешествовали?</h2>
-        <label class="block-identification__application-ios">Pink для iOS
-          <input class="block-identification__ios" type="radio" name="application-type" value="ios" checked>
+        <label class="form__label">Pink для iOS
+          <input class="form__radio" type="radio" name="application-type" value="ios" checked>
         </label>
-        <label class="block-identification__application-android">Pink на Android
-          <input class="block-identification__android" type="radio" name="application-type" value="android">
+        <label class="form__label">Pink на Android
+          <input class="form__radio" type="radio" name="application-type" value="android">
         </label>
-        <label class="block-identification__application-windows-phone">Windows Phone
-          <input class="block-identification__windows-phone" type="radio" name="application-type" value="windows-phone">
-        </label>
-      </div>
-      <div class="block-identification__block-description-emotions">
-        <label class="block-identification__description-emotions">опишите свои эмоции
-          <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <label class="form__label">Windows Phone
+          <input class="form__radio" type="radio" name="application-type" value="windows-phone">
         </label>
       </div>
-      <button class="block-identification__push-contest-data" type="submit" name="button-to-send-contest-data" aria-label="кнопка для отправки данных конкурса.">отправить форму</button>
-      <p class="block-identification__required-fields"><span>*</span> — обязательные поля</p>
+      <div class="form__block-description-emotions">
+        <label class="form__label">опишите свои эмоции
+          <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </label>
+      </div>
+      <button class="form__push-contest-data" type="submit" name="button-to-send-contest-data" aria-label="кнопка для отправки данных конкурса.">отправить форму</button>
+      <p class="form__required-fields"><span>*</span> — обязательные поля</p>
     </form>
   </main>
 
