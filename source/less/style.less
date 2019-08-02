@@ -1,3 +1,43 @@
-body {
-  background-color: red;
+/* Файл variables.less */
+@tablet-width: 760px;
+@desktop-width: 980px;
+
+@import "page-header.style.less";
+@import "wrapper-header-logo.style.less";
+@import "logo-link.style.less";
+@import "close-toggle.style.less";
+@import "nav.style.less";
+@import "application-page.style.less";
+@import "visually-hidden.style.less";
+@import "section-application.style.less";
+
+// Шрифты
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("/fonts/opensanslight.woff2") format("woff2"), url("/fonts/opensanslight.woff") format("woff");
 }
+
+@font-face {
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("/fonts/opensansbold.woff2") format("woff2"), url("/fonts/opensansbold.woff.woff") format("woff");
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.78;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: #000000;
+}
+
