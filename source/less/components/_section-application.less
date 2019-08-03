@@ -4,7 +4,26 @@
   align-items: center;
   width: 320px;
   margin: auto;
-  background-color: @darck-gray-blue;
+  background-color: @dark-gray-blue;
+}
+
+.section-application__background {
+  display: flex;
+  flex-direction: column;
+  min-height: 432px;
+  min-width: 320px;
+  position: relative;
+  background-image: url("/img/img__background/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //top: -75px;
+  background-position: center -62px;
+  //z-index: 3;
+}
+
+.section-application__phone {
+  position: relative;
+  margin-top: 113px;
 }
 
 .section-application__link-download-application {
@@ -21,7 +40,7 @@
   height: 55px;
   border-radius: 60px;
   border: solid 3px @white;
-  background-color: @darck-gray-blue;
+  background-color: @dark-gray-blue;
 }
 
 .section-application__list-download {
