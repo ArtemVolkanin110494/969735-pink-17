@@ -1,18 +1,21 @@
 .price-table {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 320px;
+  min-height: 506px;
+  margin: auto;
   background-color: @white-gray-b;
 }
 
 .price-table__title {
   font-size: 18px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.67;
-  letter-spacing: normal;
   text-transform: initial;
   text-align: center;
   color: @white;
-  //background-color: @dark-gray-blue;
+  margin-bottom: 0;
 }
 
 .price-table__text-price {
@@ -21,10 +24,13 @@
   line-height: 1.25;
   text-align: center;
   color: @white;
-  //background-color: @dark-gray-blue;
+  margin: 0;
+  margin-bottom: 21px;
 }
 
 .price-table__list {
+  width: 276px;
+  margin: auto;
   list-style: none;
   padding: 0;
   font-size: 14px;
@@ -32,4 +38,43 @@
   line-height: 2.14;
   text-align: left;
   color: @white-gray;
+  background-color: @white-gray-b;
+}
+
+.price-table__item {
+  width: 276px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid @white-gray-b;
+  background-color: @white;
+}
+
+.price-table__item_background {
+  display: flex;
+  flex-direction: column;
+  width: 276px;
+  height: 94px;
+  border: 2px solid @white-gray-b;
+  background-color: @dark-gray-blue;
+}
+
+.price-table__text {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  text-align: left;
+  color: @white-gray;
+  margin-left: 22px;
+}
+
+.price-table__svg {
+  fill: @tomato;
+
+  margin-right: 18px;
+}
+
+.price-table__svg_green {
+  fill: @green;
 }
