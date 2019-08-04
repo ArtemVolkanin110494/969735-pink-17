@@ -26,14 +26,21 @@
   color: @tomato;
   //noinspection ALL
   &_with-a-different-style-and-color-text {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
     text-transform: initial;
+    text-align: left;
     color: @white-gray;
   }
 }
 
 .form__input::placeholder {
   font-size: 18px;
-  font-weight: normal;
+  font-weight: @weight-three-hundred;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.67;
@@ -45,18 +52,6 @@
 .form__list {
   list-style: none;
   padding: 0;
-}
-
-.form__label-check {
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-transform: initial;
-  text-align: left;
-  color: @white-gray;
 }
 
 .button-push-contest-data {
