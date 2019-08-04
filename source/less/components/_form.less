@@ -21,8 +21,14 @@
   font-stretch: normal;
   line-height: 2.14;
   letter-spacing: normal;
+  text-transform: uppercase;
   text-align: left;
   color: @tomato;
+  //noinspection ALL
+  &_with-a-different-style-and-color-text {
+    text-transform: initial;
+    color: @white-gray;
+  }
 }
 
 .form__input::placeholder {
@@ -71,6 +77,11 @@
   font-stretch: normal;
   line-height: 2.14;
   letter-spacing: normal;
+  text-transform: uppercase;
   text-align: center;
   color: @white-gray;
+}
+
+.form__with-a-bastard-in-the-span {
+  color: @tomato;
 }
