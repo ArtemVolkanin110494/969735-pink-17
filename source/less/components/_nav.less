@@ -1,0 +1,48 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 2;
+}
+
+.nav__item {
+  min-width: 320px;
+  background-color: @dark-gray-blue;
+  text-align: center;
+  //поменять на бокс шадо
+  border-top: 1px solid @white-gray;
+  border-bottom: 1px solid @black;
+}
+
+.nav__link {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.78;
+  letter-spacing: normal;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: @white;
+  text-decoration: none;
+}
+//media для tabelt ver.
+//@media (min-width: @tablet-width) {
+//  .nav {
+//    width: auto;
+//    margin: auto;
+//  }
+//
+//  .nav__list {
+//    min-width: 660px;
+//    margin: auto;
+//  }
+//}
