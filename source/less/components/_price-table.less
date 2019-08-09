@@ -1,7 +1,42 @@
 .price-table {
-  width: 320px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 320px;
   margin: auto;
   background-color: @white-light-gray;
+  overflow: hidden;
+}
+
+.price-table__wrapper {
+  display: flex;
+  flex-direction: row;
+  min-width: 660px;
+  margin-left: -248px;
+}
+
+.price-table__item_border {
+  box-shadow: 0 0 1px 0  @white-gray-black;
+  //border: 2px solid @white-light-gray;
+}
+
+.price-table__item_min-width-and-border {
+  box-shadow: 0 0 1px 0  @white-gray-black;
+  //border-left: 2px solid @white-light-gray;
+  //border-right: 2px solid @white-light-gray;
+  width: 274px;
+  height: 94px;
+  display: flex;
+  flex-direction: column;
+  background-color: @dark-gray-blue;
+}
+
+.price-table__item_min-width-and-border::before {
+  //content: "";
+  //position: absolute;
+  //background-image: url("img__svg/bg-hit.svg");
+  //background-repeat: no-repeat;
+  //background-position: center;
 }
 
 .price-table__title {
@@ -13,6 +48,7 @@
   letter-spacing: normal;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 0;
   color: @white;
 }
 
@@ -20,24 +56,125 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 1.25;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
   color: @white;
 }
 
 .price-table__list {
-  width: 276px;
-  margin: auto;
+  width: 278px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   list-style: none;
   padding: 0;
   text-align: left;
   color: @white-gray;
   background-color: @white;
 }
-
+//скрывает список, который отображается еа tablet
+.price-table__list_left-block-tablet {
+  display: none;
+}
+//end
 .price-table__text {
+  display: table-row;
   font-weight: 400;
   text-transform: uppercase;
   text-align: left;
   color: @white-gray;
+  margin-left: 20px;
 }
+
+.price-table__item_other-display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-table__item_image-yes-svg {
+  margin-right: 22px;
+  fill: @green;
+  width: 30px;
+  height: 20px;
+}
+
+.price-table__item_image-no-svg {
+  margin-right: 20px;
+  fill: @tomato;
+}
+//для tablet
+@media (min-width: @tablet-width) {
+  .price-table__item_min-width-and-border {
+    box-shadow: 0 0 1px 0  @white-gray-black;
+  }
+
+  .price-table {
+    display: flex;
+    min-width: 660px;
+    margin: auto;
+    background-color: @white-light-gray;
+  }
+
+  .price-table__wrapper {
+    display: flex;
+    width: auto;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .price-table__list {
+    width: 152px;
+    margin: 0;
+  }
+
+  .price-table__item {
+    width: 152px;
+    min-height: 45px;
+  }
+
+  .price-table__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+  }
+
+  .price-table__text-price {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.67;
+  }
+
+  .price-table__text {
+    display: none;
+  }
+
+  .price-table__item_image-yes-svg {
+    margin: auto;
+    width: 30px;
+    height: 20px;
+  }
+
+  .price-table__item_image-no-svg {
+    margin: auto;
+  }
+
+  .price-table__list_left-block-tablet {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+
+  .price-table__item_left-block-tablet {
+    box-shadow: 0 0 1px 0  @white-gray-black;
+  }
+
+  .price-table__text_left-block-tablet {
+    margin: 0;
+    margin-left: 10px;
+    padding: 8px;
+    color: @white-gray;
+  }
+}
+//end
