@@ -11,6 +11,7 @@
     text-align: center;
     min-width: 660px;
     margin: auto;
+    margin-top: 120px;
   }
 }
 
@@ -36,6 +37,18 @@
       margin-left: 40px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 250px;
+    margin-left: 250px;
+
+    &_line-two {
+      margin: 0;
+      margin-right: 260px;
+      margin-left: 260px;
+      margin-bottom: 75px;
+    }
+  }
 }
 
 .advantages__list {
@@ -43,6 +56,7 @@
   list-style: none;
   padding: 0;
   background-color: @white-light-gray;
+  margin: auto;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -53,6 +67,16 @@
     list-style: none;
     padding: 0;
     background-color: @white-light-gray;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -65,6 +89,13 @@
   @media (min-width: @tablet-width) {
     text-align: left;
     margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
   }
 }
 
@@ -87,6 +118,15 @@
       margin-bottom: 20px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67;
+    text-align: center;
+    margin-bottom: 52px;
+    margin-top: 20px;
+  }
 }
 
 .advantages__item {
@@ -94,11 +134,37 @@
     width: 310px;
     margin-left: 330px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 368px;
+    width: 240px;
+
+    &:first-child {
+      width: 242px;
+      margin-left: 163px;
+      margin-top: 368px;
+    }
+
+    &:nth-of-type(3) {
+      margin-right: 163px;
+    }
+  }
 }
 
 .advantages__item_element-property {
   @media (min-width: @tablet-width) {
     margin-top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
   }
 }
 
@@ -106,6 +172,8 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 45px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
-
-

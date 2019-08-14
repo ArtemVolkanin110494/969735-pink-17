@@ -3,9 +3,20 @@
   list-style: none;
   display: flex;
   flex-direction: row;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 60px;
+    margin-bottom: 90px;
+  }
 }
 
-.social-networks__link_margin-svg {
-  margin-left: 49px;
-  margin-right: 49px;
+.social-networks__item {
+  @media (min-width: @desktop-width) {
+    margin: 20px;
+  }
 }
+
+//.social-networks__link:last-child(2) {
+//  margin-left: 49px;
+//  margin-right: 49px;
+//}
