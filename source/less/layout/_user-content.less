@@ -4,6 +4,10 @@
   align-items: center;
   margin: auto;
   min-width: 660px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 660px;
+  }
 }
 
 .user-content__text {
@@ -13,7 +17,3 @@
   margin-right: 35px;
   color: @white-gray;
 }
-
-//@media (min-width: @tablet-width) {
-//  min-width: 660px;
-//}

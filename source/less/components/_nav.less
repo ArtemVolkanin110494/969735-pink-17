@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: auto;
+  }
 }
 
 .nav__list {
@@ -9,15 +14,21 @@
   padding: 0;
   list-style: none;
   z-index: 2;
+  background-color: @dark-gray-blue;
+
+  @media (min-width: @tablet-width) {
+    min-width: 660px;
+    margin: auto;
+  }
 }
 
 .nav__item {
   min-width: 320px;
-  background-color: @dark-gray-blue;
+  //background-color: @dark-gray-blue;
   text-align: center;
   //поменять на бокс шадо
-  border-top: 1px solid @white-gray;
-  border-bottom: 1px solid @black;
+  //border-top: 1px solid @white-gray;
+  //border-bottom: 1px solid @black;
 }
 
 .nav__link {
@@ -34,15 +45,3 @@
   color: @white;
   text-decoration: none;
 }
-//media для tabelt ver.
-//@media (min-width: @tablet-width) {
-//  .nav {
-//    width: auto;
-//    margin: auto;
-//  }
-//
-//  .nav__list {
-//    min-width: 660px;
-//    margin: auto;
-//  }
-//}

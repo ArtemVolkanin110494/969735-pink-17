@@ -5,6 +5,15 @@
   min-width: 320px;
   margin: auto;
   background-color: @dark-gray-blue;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    min-width: 660px;
+    height: 729px;
+    margin-top: 110px;
+    z-index: 4;
+  }
 }
 
 .section-application__background {
@@ -18,6 +27,16 @@
   background-size: cover;
   background-position: center -72px;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    min-width: 660px;
+    min-height: 729px;
+    position: relative;
+    background-image: url("/img/img__background/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 //.section-application__phone {
@@ -35,8 +54,14 @@
   border: solid 3px @white;
   padding-top: 17px;
   padding-bottom: 20px;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 45px;
+  padding-left: 45px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -340px;
+    margin-right: 310px;
+    z-index: 5;
+  }
 }
 
 .section-application__list-download {
@@ -45,6 +70,17 @@
   align-items: baseline;
   list-style: none;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    margin-right: 305px;
+    padding: 0;
+    background-color: red;
+    z-index: 7;
+  }
 }
 
 .section-application__text {
@@ -56,52 +92,12 @@
   color: @white;
   margin-top: 20px;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.33;
+    margin-right: 310px;
+    z-index: 7;
+  }
 }
-//
-//@media (min-width: @tablet-width) {
-//  .section-application {
-//    display: flex;
-//    align-items: center;
-//    min-width: 660px;
-//    height: 729px;
-//    margin-top: 110px;
-//    z-index: 4;
-//  }
-//
-//  .section-application__background {
-//    min-width: 660px;
-//    min-height: 729px;
-//    position: relative;
-//    background-image: url("/img/img__background/bg-back-tablet@1x.jpg");
-//    background-repeat: no-repeat;
-//    background-size: cover;
-//    background-position: center;
-//  }
-//
-//  .section-application__link-download-application {
-//    margin-top: -340px;
-//    margin-right: 310px;
-//    z-index: 5;
-//  }
-//
-//  .section-application__list-download {
-//    display: flex;
-//    flex-direction: row;
-//    align-items: center;
-//    width: 300px;
-//    margin-right: 305px;
-//    padding: 0;
-//    background-color: red;
-//    z-index: 7;
-//  }
-//
-//  .section-application__text {
-//    font-size: 18px;
-//    font-weight: 300;
-//    line-height: 1.33;
-//    margin-right: 310px;
-//    margin-top: 20px;
-//    margin-bottom: 35px;
-//    z-index: 7;
-//  }
-//}
