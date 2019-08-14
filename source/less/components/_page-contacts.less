@@ -126,7 +126,7 @@
     }
   }
 
-  @media (min-width: @desktop-width) and (max-width: @desktop-max-width) {
+  @media (min-width: @desktop-width) {
     margin: 0;
 
     &:last-child {
@@ -147,6 +147,32 @@
 
     &:nth-of-type(3) {
       margin-right: 0;
+      margin-left: 115px;
+      order: 2;
+    }
+  }
+
+  @media (min-width: 1000px), (min-width: 1100px) {
+    margin: 0;
+
+    &:last-child {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(1) {
+      margin-left: 178px;
+      margin-right: 0;
+      order: 1;
+    }
+
+    &:nth-of-type(2) {
+      margin-left: auto;
+      margin-right: auto;
+      order: 3;
+    }
+
+    &:nth-of-type(3) {
+      margin-right: 97px;
       margin-left: 115px;
       order: 2;
     }
