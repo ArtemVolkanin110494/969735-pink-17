@@ -87,17 +87,26 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: auto;
-    margin-right: 305px;
+    width: 200px;
+    margin-right: 300px;
     padding: 0;
     background-color: red;
     z-index: 7;
   }
 
-  @media (min-width: @tablet-width) {
-    //margin: auto;
-    //margin-right: 640px;
+  @media (min-width: @desktop-width) {
+    width: 200px;
+    margin: auto;
+    margin-left: 180px;
   }
+}
+
+.section-application__item-download {
+  text-align: center;
+  width: 100%;
+  //@media (min-width: @tablet-width) {
+  //
+  //}
 }
 
 .section-application__text {
