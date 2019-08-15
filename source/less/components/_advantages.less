@@ -10,12 +10,12 @@
     flex-direction: column;
     text-align: center;
     min-width: 660px;
-    margin: auto;
     margin-top: 120px;
   }
 }
 
 .advantages__text-header {
+  //font: normal 300 24px/ normal normal;
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
@@ -25,28 +25,26 @@
   text-align: center;
   text-transform: initial;
   color: @white-gray;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
-    margin: 0;
-    margin-top: 59px;
+    padding-top: 59px;
 
     &_line-two {
-      margin: 0;
-      margin-right: 40px;
-      margin-left: 40px;
+      //  cверху ноль, справа с лева по 40
+      padding: 0 40px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 250px;
-    margin-left: 250px;
+    padding-right: 250px;
+    padding-left: 250px;
 
     &_line-two {
-      margin: 0;
-      margin-right: 260px;
-      margin-left: 260px;
-      margin-bottom: 75px;
+      padding-right: 260px;
+      padding-left: 260px;
+      padding-bottom: 75px;
     }
   }
 }
