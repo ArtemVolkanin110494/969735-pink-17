@@ -2,10 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  min-width: 320px;
   position: relative;
 
   @media (min-width: @tablet-width) {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
     min-width: 660px;
   }
 
@@ -17,7 +21,7 @@
     height: 129px;
     width: 100%;
     margin: auto;
-    //z-index: 5;
+    z-index: 5;
   }
 }
 
