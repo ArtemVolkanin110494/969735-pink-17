@@ -8,22 +8,22 @@
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
-    display: flex;
     min-width: 660px;
     margin: auto;
     background-color: @white-light-gray;
   }
 }
 
+
 .price-table__wrapper {
   display: flex;
   flex-direction: row;
   min-width: 660px;
-  margin-left: -248px;
+  margin-left: -255px;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    width: auto;
+    min-width: 660px;
     margin: auto;
     margin-top: 50px;
   }
@@ -44,13 +44,6 @@
     margin: 0;
     margin-bottom: 50px;
   }
-
-  &_left-block-tablet {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    margin-left: 22px;
-  }
 }
 
 .price-table__title {
@@ -62,7 +55,7 @@
   letter-spacing: normal;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 0;
+  margin: 0;
   color: @white;
 
   @media (min-width: @tablet-width) {
@@ -70,6 +63,70 @@
     font-weight: 700;
     line-height: 1.88;
   }
+}
+
+.price-table__item_border {
+  box-shadow: 0 0 1px 0  @white-gray-black;
+}
+
+.price-table__item {
+  width: 278px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 152px;
+  }
+
+  &_image-yes-svg {
+    margin-right: 18px;
+    fill: @green;
+    width: 30px;
+    height: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin: auto;
+      padding-top: 12.5px;
+      padding-bottom: 12.5px;
+    }
+  }
+
+  &_image-no-svg {
+    margin-right: 19px;
+    fill: @tomato;
+
+    @media (min-width: @tablet-width) {
+      margin: auto;
+      padding-top: 12.5px;
+      padding-bottom: 12.5px;
+    }
+  }
+}
+
+.price-table__item_property-of-the-first-list-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  background-color: @dark-gray-blue;
+  box-shadow: 0 0 1px 0 @white-gray-black;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  //&::before {
+  //  content: "";
+  //  position: absolute;
+  //  background-image: url("img__svg/bg-hit.svg");
+  //  background-repeat: no-repeat;
+  //  background-position: center;
+  //}
 }
 
 .price-table__text-price {
@@ -88,11 +145,6 @@
   }
 }
 
-//скрывает список, который отображается на tablet
-.price-table__list-left-block-tablet {
-  display: none;
-}
-//end
 .price-table__text {
   display: table-row;
   font-weight: 400;
@@ -106,68 +158,57 @@
   }
 }
 
-.price-table__item {
-  &_border {
-    box-shadow: 0 0 1px 0  @white-gray-black;
-  }
-
-  &_min-width-and-border {
-    width: 274px;
-    height: 94px;
-    display: flex;
-    flex-direction: column;
-    background-color: @dark-gray-blue;
-    box-shadow: 0 0 1px 0  @white-gray-black;
-
-    &::before {
-      //content: "";
-      //position: absolute;
-      //background-image: url("img__svg/bg-hit.svg");
-      //background-repeat: no-repeat;
-      //background-position: center;
-    }
-  }
-
-  &_other-display {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &_image-no-svg {
-    margin-right: 20px;
-    fill: @tomato;
-
-    @media (min-width: @tablet-width) {
-      margin: auto;
-    }
-  }
-
-  &_image-yes-svg {
-    margin-right: 22px;
-    fill: @green;
-    width: 30px;
-    height: 20px;
-
-    @media (min-width: @tablet-width) {
-      margin: auto;
-    }
-  }
+//left block
+.price-table__list-left-block-tablet {
+  display: none;
 
   @media (min-width: @tablet-width) {
     width: 152px;
-    min-height: 45px;
-  }
-
-  &_left-block-tablet {
-    box-shadow: 0 0 1px 0  @white-gray-black;
-  }
-
-  &_left-block-tablet {
-    margin: 0;
-    margin-left: 10px;
-    padding: 8px;
-    color: @white-gray;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding: 0;
+    margin-left: 22px;
+    margin-bottom: 52px;
+    box-shadow: 0 0 1px 0 @white-gray-black;
+    background-color: @white;
   }
 }
+
+.price-table__text_left-block-tablet {
+  margin: 0;
+  margin-left: 10px;
+  padding: 8.25px;
+  color: @white-gray;
+  }
+
+.price-table__item_left-block-tablet {
+  box-shadow: 0 0 1px 0 @white-gray-black;
+}
+
+//////скрывает список, который отображается на tablet
+////.price-table__list_left-block-tablet {
+////  display: none;
+////}
+//////end
+
+//
+//@media (min-width: @tablet-width) {
+//  .price-table__list_left-block-tablet {
+//    display: flex;
+//    flex-direction: column;
+//    align-self: flex-end;
+//    margin-left: 22px;
+//  }
+//
+//  .price-table__item_left-block-tablet {
+//    box-shadow: 0 0 1px 0 @white-gray-black;
+//  }
+//
+//  .price-table__text_left-block-tablet {
+//    margin: 0;
+//    margin-left: 10px;
+//    padding: 8px;
+//    color: @white-gray;
+//  }
+//}
