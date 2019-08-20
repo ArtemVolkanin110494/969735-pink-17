@@ -20,6 +20,11 @@
   &_with-other-background {
     background-color: @white-light-gray;
   }
+
+  &_describe-emotions {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form__label {
@@ -30,7 +35,11 @@
   text-transform: uppercase;
   color: @tomato;
   padding-left: 20px;
+  margin-bottom: 16px;
 
+  &_does-not-inheri-clogs {
+    padding: 0;
+  }
 }
 
 .form__input {
@@ -38,6 +47,7 @@
   min-height: 59px;
   border: 2px solid @white-gray-black;
   padding-left: 20px;
+  margin-bottom: 29px;
 }
 
 .form__input::placeholder {
@@ -55,6 +65,13 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.67;
+  min-width: 275px;
+  min-height: 197px;
+  padding-top: 23px;
+
+  &::placeholder {
+    text-align: center;
+  }
 }
 
 .button-push-contest-data {
@@ -79,10 +96,14 @@
 
 .form__item {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.form__label-checkbox {
+.form__label-list-item {
   order: 2;
+  margin-left: 22px;
+  margin-right: 33px;
 }
 
 .form__checkbox {

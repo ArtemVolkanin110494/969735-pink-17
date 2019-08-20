@@ -55,73 +55,72 @@
   <form class="form" action="https://echo.htmlacademy.ru" name="competition" method="post">
 
     <div class="form__div">
-      <label class="form__label">фамилия:</label>
-      <input class="form__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+      <label class="form__label" for="surname">фамилия:</label>
+      <input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
 
-      <label class="form__label">имя:</label>
-      <input class="form__input" type="text" name="name" placeholder="Введите ваше имя *" required>
+      <label class="form__label" for="name">имя:</label>
+      <input class="form__input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
 
-      <label class="form__label">отчество:</label>
-      <input class="form__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+      <label class="form__label" for="patronymic">отчество:</label>
+      <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
     </div>
 
     <div class="form__div form__div_with-other-background">
       <h2 class="second-level-heading">ваши безбашенные достижения в путешествии</h2>
       <ul class="form__list">
         <li class="form__item">
-          <label class="form__label-checkbox">Сделал селфи с акулой</label>
+          <label class="form__label-list-item">Сделал селфи с акулой</label>
           <input class="form__checkbox" type="checkbox" name="shark" checked>
         </li>
         <li class="form__item">
-          <label class="form__label-checkbox">Обгорел на пляже</label>
+          <label class="form__label-list-item">Обгорел на пляже</label>
           <input class="form__checkbox" type="checkbox" name="beach" checked>
         </li>
         <li class="form__item">
-          <label class="form__label-checkbox">Видел Чака Норриса</label>
+          <label class="form__label-list-item">Видел Чака Норриса</label>
           <input class="form__checkbox" type="checkbox" name="norris">
         </li>
         <li class="form__item">
-          <label class="form__label-checkbox">Накупил сувениров</label>
+          <label class="form__label-list-item">Накупил сувениров</label>
           <input class="form__checkbox" type="checkbox" name="souvenirs">
         </li>
         <li class="form__item">
-          <label class="form__label-checkbox">Удержал башню</label>
+          <label class="form__label-list-item">Удержал башню</label>
           <input class="form__checkbox" type="checkbox" name="tower" checked>
         </li>
         <li class="form__item">
-          <label class="form__label-checkbox">Разгромил отель</label>
+          <label class="form__label-list-item">Разгромил отель</label>
           <input class="form__checkbox" type="checkbox" name="hotel">
         </li>
       </ul>
     </div>
     <div class="form__div">
-      <label class="form__label">Номер телефона</label>
-      <input class="form__input" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
+      <label class="form__label" for="phone number">Номер телефона</label>
+      <input class="form__input" type="tel" name="phone-number" id="phone number" placeholder="Номер, пожалуйста">
 
-      <label class="form__label">Адрес почты</label>
-      <input class="form__input" type="email" name="mail-address" placeholder="Введите почту *" required>
+      <label class="form__label" for="mail address">Адрес почты</label>
+      <input class="form__input" type="email" name="mail-address" id="mail address" placeholder="Введите почту *" required>
     </div>
     <div class="form__div form__div_with-other-background">
       <h2 class="second-level-heading">с каким приложением путешествовали?</h2>
       <ul class="form__list">
         <li class="form__item">
-          <label class="form__label-radio">Pink для iOS</label>
+          <label class="form__label-list-item">Pink для iOS</label>
           <input class="form__radio" type="radio" name="application-type" value="ios" checked>
         </li>
         <li class="form__item">
-          <label class="form__label-radio">Pink на Android</label>
+          <label class="form__label-list-item">Pink на Android</label>
           <input class="form__radio" type="radio" name="application-type" value="android">
         </li>
         <li class="form__item">
-          <label class="form__label-radio">Windows Phone</label>
+          <label class="form__label-list-item">Windows Phone</label>
           <input class="form__radio" type="radio" name="application-type" value="windows-phone">
         </li>
       </ul>
     </div>
-    <div class="form__div">
-      <label class="form__label">опишите свои эмоции
-        <textarea class="form__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </label>
+    <div class="form__div form__div_describe-emotions">
+      <label class="form__label form__label_does-not-inheri-clogs" for="describe-emotions">опишите свои эмоции</label>
+      <textarea class="form__textarea" id="describe-emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
     </div>
     <button class="button-push-contest-data" type="submit" name="button-to-send-contest-data" aria-label="кнопка для отправки данных конкурса.">отправить форму</button>
     <p class="form__required-fields"><span class="form__with-a-bastard-in-the-span">*</span> — обязательные поля</p>
