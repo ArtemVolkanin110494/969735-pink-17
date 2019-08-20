@@ -3,13 +3,12 @@
   flex-direction: column;
   align-items: center;
   min-width: 320px;
-  position: relative;
+
 
   @media (min-width: @tablet-width) {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     min-width: 660px;
   }
 
@@ -34,16 +33,18 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
+    position: absolute;
     margin: auto;
-    width: 100%;
+    min-width: 660px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
-    margin-left: 30%;
-    margin-right: 129px;
-    width: 981px;
+    //margin-left: 30%;
+    //margin-right: 129px;
+    min-width: 960px;
+    padding-left: 30%;
     height: 129px;
     background-color: initial;
   }

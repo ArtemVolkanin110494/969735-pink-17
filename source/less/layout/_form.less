@@ -15,6 +15,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   background-color: @white;
+  padding: 20px;
   //noinspection ALL
   &_with-other-background {
     background-color: @white-light-gray;
@@ -28,6 +29,15 @@
   text-align: left;
   text-transform: uppercase;
   color: @tomato;
+  padding-left: 20px;
+
+}
+
+.form__input {
+  width: 256px;
+  min-height: 59px;
+  border: 2px solid @white-gray-black;
+  padding-left: 20px;
 }
 
 .form__input::placeholder {
@@ -65,4 +75,16 @@
 
 .form__with-a-bastard-in-the-span {
   color: @tomato;
+}
+
+.form__item {
+  display: flex;
+}
+
+.form__label-checkbox {
+  order: 2;
+}
+
+.form__checkbox {
+  order: 1;
 }
