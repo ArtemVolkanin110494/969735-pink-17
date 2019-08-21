@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-
+  padding-top: 46px;
   min-width: 320px;
   margin: auto;
 
@@ -16,7 +16,6 @@
 }
 
 .advantages__text-header {
-  //font: normal 300 24px/ normal normal;
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
@@ -24,7 +23,7 @@
   letter-spacing: normal;
   line-height: normal;
   text-align: center;
-  color: @white-gray;
+  color: @river-bed;
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -32,19 +31,20 @@
     padding-top: 59px;
 
     &_line-two {
-      //  cверху ноль, справа с лева по 40
-      padding: 0 40px;
+      @media (min-width: @tablet-width) {
+        //  cверху ноль, справа с лева по 40
+        padding: 0 40px;
+      }
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 250px;
-    padding-left: 250px;
+    padding: 0 250px 250px;
 
     &_line-two {
-      padding-right: 260px;
-      padding-left: 260px;
-      padding-bottom: 75px;
+      @media (min-width: @desktop-width) {
+        padding: 0 260px 75px;
+      }
     }
   }
 }
@@ -53,7 +53,7 @@
   width: 320px;
   list-style: none;
   padding: 0;
-  background-color: @white-light-gray;
+  background-color: @concrete;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -99,12 +99,13 @@
   font-weight: 400;
   line-height: 1.71;
   text-align: center;
-  color: @white-gray;
+  color: @river-bed;
+  margin-top: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
     text-align: left;
     margin: 0;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -112,12 +113,6 @@
     line-height: 1.67;
     text-align: center;
     margin: 20px 0 0;
-  }
-
-  &_element-property {
-    @media (min-width: @tablet-width) {
-      margin-top: 50px;
-    }
   }
 
   &_element-property-three {
@@ -132,8 +127,10 @@
 }
 
 .advantages__item {
-  &_block {
-    display: none;
+  &_element-property {
+    @media (min-width: @tablet-width) {
+      margin-top: 50px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -148,20 +145,5 @@
   @media (min-width: @desktop-width) {
     width: 240px;
     margin: auto;
-    //временно убрать после вставки изображений
-    &_block {
-      display: none;
     }
-
-    //&:first-child {
-    //
-    //  width: 242px;
-    //  margin: auto;
-    //  margin-left: 163px;
-    //}
-    //
-    //&:nth-of-type(3) {
-    //  margin-right: 163px;
-    //}
   }
-}

@@ -4,13 +4,13 @@
   flex-wrap: wrap;
   min-width: 320px;
   margin: auto;
-  background-color: @white-light-gray;
+  background-color: @concrete;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
     min-width: 660px;
     margin: auto;
-    background-color: @white-light-gray;
+    background-color: @concrete;
   }
 }
 
@@ -24,25 +24,22 @@
   @media (min-width: @tablet-width) {
     display: flex;
     min-width: 660px;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px  auto auto auto;
   }
 }
 
 .price-table__list {
   width: 278px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0 50px 0;
   list-style: none;
   padding: 0;
   text-align: left;
-  color: @white-gray;
+  color: @river-bed;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
     width: 152px;
-    margin: 0;
-    margin-bottom: 50px;
+    margin: 0 0 50px 0;
   }
 }
 
@@ -66,7 +63,7 @@
 }
 
 .price-table__item_border {
-  box-shadow: 0 0 1px 0  @white-gray-black;
+  box-shadow: 0 0 1px 0  @mercury;
 }
 
 .price-table__item {
@@ -82,25 +79,23 @@
 
   &_image-yes-svg {
     margin-right: 18px;
-    fill: @green;
+    fill: @aplle;
     width: 30px;
     height: 20px;
 
     @media (min-width: @tablet-width) {
       margin: auto;
-      padding-top: 12.5px;
-      padding-bottom: 12.5px;
+      padding: 13px 0 13px 0;
     }
   }
 
   &_image-no-svg {
     margin-right: 19px;
-    fill: @tomato;
+    fill: @cerise-red;
 
     @media (min-width: @tablet-width) {
       margin: auto;
-      padding-top: 12.5px;
-      padding-bottom: 12.5px;
+      padding: 12.5px 0  12.5px 0;
     }
   }
 }
@@ -112,21 +107,12 @@
   justify-content: space-between;
   padding-top: 17px;
   padding-bottom: 17px;
-  background-color: @dark-gray-blue;
-  box-shadow: 0 0 1px 0 @white-gray-black;
+  background-color: @pickled-bluewood;
+  box-shadow: 0 0 1px 0 @mercury;
 
   @media (min-width: @tablet-width) {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 0 8px 0;
   }
-
-  //&::before {
-  //  content: "";
-  //  position: absolute;
-  //  background-image: url("img__svg/bg-hit.svg");
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //}
 }
 
 .price-table__text-price {
@@ -150,11 +136,17 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: left;
-  color: @white-gray;
+  color: @river-bed;
   margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     display: none;
+
+    &_left-block-tablet {
+      margin: 0 0 0 10px;
+      padding: 8.35px 8.35px 8.45px 8.35px;
+      color: @river-bed;
+    }
   }
 }
 
@@ -168,22 +160,14 @@
     flex-direction: column;
     align-self: flex-end;
     padding: 0;
-    margin-left: 22px;
-    margin-bottom: 52px;
-    box-shadow: 0 0 1px 0 @white-gray-black;
+    margin: 0 0 50px 22px;
+    box-shadow: 0 0 1px 0 @mercury;
     background-color: @white;
   }
 }
 
-.price-table__text_left-block-tablet {
-  margin: 0;
-  margin-left: 10px;
-  padding: 8.25px;
-  color: @white-gray;
-}
-
 .price-table__item_left-block-tablet {
-  box-shadow: 0 0 1px 0 @white-gray-black;
+  box-shadow: 0 0 1px 0 @mercury;
 }
 
 //////скрывает список, который отображается на tablet
@@ -202,13 +186,13 @@
 //  }
 //
 //  .price-table__item_left-block-tablet {
-//    box-shadow: 0 0 1px 0 @white-gray-black;
+//    box-shadow: 0 0 1px 0 @mercury;
 //  }
 //
 //  .price-table__text_left-block-tablet {
 //    margin: 0;
 //    margin-left: 10px;
 //    padding: 8px;
-//    color: @white-gray;
+//    color: @river-bed;
 //  }
 //}
