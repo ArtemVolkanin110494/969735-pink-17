@@ -1,11 +1,10 @@
 .block-info {
   display: none;
-  position: relative;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
     height: 100%;
     font-size: 14px;
@@ -15,33 +14,43 @@
     color: @river-bed;
   }
 }
+//
+.block-info__svg-content {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    display: block;
+  }
+}
 
 .block-info__container {
-  margin-left: 70px;
-  margin-top: 65px;
-  margin-bottom: 116px;
+  display: none;
 
   @media (min-width: @tablet-width) {
     display: block;
     width: 295px;
-    //Верхний, правый, нижний, левый
-    margin: 65px 10px 116px 70px;
+    margin: 0 10px 0 70px;
+    padding: 102px 0 83px 0;
   }
 
   @media (min-width: @desktop-width) {
     display: inline-block;
     width: 406px;
     margin-bottom: 118px;
+    padding-top: 150px;
   }
 }
 
 .block-info__title {
+  display: none;
   color: @black;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
 
   @media (min-width: @tablet-width) {
+    display: block;
     text-align: left;
     width: 296px;
     height: 70px;
@@ -56,11 +65,17 @@
 }
 
 .block-info__text {
-  width: 100%;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 
   @media (min-width: @desktop-width) {
+    display: block;
     margin-top: 0;
     text-align: left;
+    //width: 100%;
     font-size: 18px;
     line-height: 1.67;
     color: @black;
@@ -68,14 +83,22 @@
 }
 
 .block-info__link-to-details {
+  display: none;
   color: @cerise-red;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  ;
+  }
 }
 
 .block-info__svg {
-  width: 238px;
-  height: 276px;
-  margin-left: 20px;
-  fill: @alto;
+  @media (min-width: @tablet-width) {
+    width: 238px;
+    height: 276px;
+    margin: 59px 0 52px 20px;
+    fill: @alto;
+  }
 
   @media (min-width: @desktop-width) {
     width: 298px;
@@ -84,16 +107,19 @@
 }
 
 .block-info__svg-content {
-  margin-top: 50px;
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-left: 131px;
+  }
 
   &::before {
     content: "24";
-    width: 150px;
-    height: 150px;
+    width: 185px;
+    height: 185px;
     position: absolute;
-    padding: 5px;
-    left: 44px;
-    top: 110px;
+    padding: 0;
+    left: 46px;
+    top: 122px;
     text-align: center;
     font-size: 96px;
     font-weight: 700;
@@ -103,20 +129,15 @@
     color: @cerise-red;
 
     @media (min-width: @desktop-width) {
-      left: 180px;
-      top: 75px;
-      width: 200px;
-      height: 200px;
+      left: 57px;
+      top: 142px;
+      width: 225px;
+      height: 225px;
       border-radius: 150px;
       font-size: 120px;
       font-weight: 700;
       line-height: 1.56;
       color: @cerise-red;
     }
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 0;
-    margin-left: 131px;
   }
 }

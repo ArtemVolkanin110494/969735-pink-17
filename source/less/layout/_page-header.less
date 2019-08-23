@@ -1,17 +1,19 @@
 .page-header {
   display: flex;
-  flex-direction: column;
-  min-width: 320px;
-  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  //min-width: 320px;
+  //margin: auto;
   position: relative;
+  z-index: 5;
 
-  @media (min-width: @tablet-width) {
-    min-width: 660px;
-    min-height: 110px;
-  }
-
+  //@media (min-width: @tablet-width) {
+  //  min-width: 660px;
+  //  min-height: 110px;
+  //}
+  //
   @media (min-width: @desktop-width) {
     width: auto;
-    height: auto;
+    height: 110px;
   }
 }
